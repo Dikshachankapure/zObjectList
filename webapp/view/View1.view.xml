@@ -1,0 +1,37 @@
+<mvc:View controllerName="objectList.zobjectList.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<List id="List123" items="{/Customers}" mode="Delete" delete="Ondelete">
+								<headerToolbar>
+								<OverflowToolbar>
+									<content>
+										<Title text="Customers" level="H2"/>
+										<ToolbarSpacer/>
+										<SearchField id="txtSearch" width="40%" class="sapUiSmallMargin" liveChange="onSearch"/>
+										<Button icon="sap-icon://add" press="onAdd" type="Emphasized"/>
+									</content>
+								</OverflowToolbar>
+							</headerToolbar>
+							<items>
+								<ObjectListItem title="{CompanyName}" type="Active" press="onListItemPress"
+									number="{CustomerID }"
+									>
+									<firstStatus>
+										<ObjectStatus text="{ContactName}"/>
+									</firstStatus>
+									<attributes>
+										<ObjectAttribute text="{Country}"/>
+										<ObjectAttribute text="{Phone}"/>
+									</attributes>
+								</ObjectListItem>
+							</items>
+						</List>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

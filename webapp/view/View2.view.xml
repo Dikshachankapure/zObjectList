@@ -1,0 +1,54 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="objectList.zobjectList.controller.View2"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:tnt="sap.tnt">
+	<App>
+		<pages>
+			<Page title="Title" showNavButton="true" navButtonPress="Gotopage1">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<f:SimpleForm id="SimpleFormChange354" editable="true" title="EmployeeForm" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3"
+							labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+							columnsL="1" columnsM="1" singleContainerFullSize="false">
+							<f:content>
+								<Label text="CustomerID" required="true"/>
+								<Input id="custid" value="0" visible="false"/>
+								<Label text="CompanyName" required="true"/>
+								<Input type="Text" id="cname" valueHelpRequest="_handleValueHelpEmpName" suggestionItems="{/CompanyNameData}" textFormatMode="Key"
+									showSuggestion="true" showValueHelp="true">
+									<suggestionItems>
+										<core:Item text="{CompanyName}" key="{CompanyName}"/>
+									</suggestionItems>
+								</Input>
+								<Label text="ContactName" required="true"/>
+								<Input id="CtName"/>
+								<Label text="ContactTitle" required="true"/>
+								<Input id="cttitle"/>
+								<Label text="Address" required="true"/>
+								<Input id="addr"/>
+								<Label text="City" required="true"/>
+								<Input id="city1"/>
+								<Label text="Country" required="true"/>
+								<Select id="cntry">
+									<items>
+										<core:Item text="Germany" key="germany"/>
+										<core:Item text="Mexico" key="mexico"/>
+										<core:Item text="India" key="india"/>
+									</items>
+								</Select>
+								<Label text="Phone" required="true"/>
+								<Input type="Tel" maxLength="10" id="mb1"/>
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+				</content>
+				<footer>
+					<Bar>
+						<contentRight>
+							<Button text="Save" press="OnSave"/>
+							<Button text="Clear" press="OnClear"/>
+						</contentRight>
+					</Bar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

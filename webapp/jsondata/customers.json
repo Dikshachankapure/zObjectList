@@ -1,0 +1,33 @@
+{
+	"Customers": [{
+			"CustomerID": "1",
+			"CompanyName": "Alfreds Futterkiste",
+			"ContactName": "Maria Anders",
+			"ContactTitle": "Sales Representative",
+			"Address": "Obere Str. 57",
+			"City": "Berlin",
+			"Country": "Germany",
+			"Phone": "030-0074321"
+		}, {
+			"CustomerID": "2",
+			"CompanyName": "Ana Trujillo Emparedados y helado",
+			"ContactName": "Ana Trujillo",
+			"ContactTitle": "Owner",
+			"Address": "Avda. de la Constitución 2222",
+			"City": "México",
+			"Country": "Mexico",
+			"Phone": "030-555-4729"
+		}, {
+			"CustomerID": "1",
+			"CompanyName": "Antonio Moreno Taquería",
+			"ContactName": "Antonio Moreno",
+			"ContactTitle": "Owner",
+			"Address": "Mataderos  2312",
+			"City": "México ",
+			"Country": "Mexico",
+			"Phone": " 555-3932"
+		}
+
+	]
+
+}
